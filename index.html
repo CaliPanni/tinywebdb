@@ -1,0 +1,43 @@
+
+<html>
+<head>
+<style type="text/css">
+body {margin-left: 5% ; margin-right: 5%; margin-top: 0.5in;
+font-family: verdana, arial,"trebuchet ms", helvetica, sans-serif;}
+ul {list-style: disc;}
+</style>
+<title>Tiny WebDB</title>
+</head>
+<body>
+<h2>App Inventor for Android: Tiny WebDB Service</h2>
+<image src="/images/appinventor_logo.gif" width="161" hspace="10">
+<p />
+<h3>NOTE: This service is being modified.  It might go offline without notice
+<table border=0>
+<tr valign="top">
+<td>&nbsp;</td>
+<td>
+<p>
+This demonstration Web service is designed to work with <a
+href="http://appinventor.googlelabs.com/about">App Inventor
+for Android</a> and the TinyWebDB component.  The site is designed
+for use by applications running on the phone (via JSON requests).  You
+can also invoke the get and store operations by hand from this Web
+page to test the API, and also delete individual entries.</p>
+
+<p>This service is only a demo. The database will store at most 2000
+entries; adding entries beyond that will cause the oldest entries to
+be deleted.  Also, individual data values are limited to at most 500 characters.</p>
+
+<p>The source code for this service, designed to run on Google AppEngine, is included in the 
+App Inventor documentation. You can use this implementation as a model for deploying
+your own services with larger capacity and additional features, and
+build applications that use the TinyWebDB component to talk to your
+service.</p> </td> </tr> </table>
+<p>Available calls:
+
+<ul>
+<li><a href="/storeavalue">/storeavalue</a>: Stores a value, given a tag and a value</li>
+<li><a href="/getvalue">/getvalue</a>: Retrieves the value stored under a given tag.  Returns the empty string if no value is stored</li>
+</ul>
+</body></html>
